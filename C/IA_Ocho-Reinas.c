@@ -50,7 +50,7 @@ bool espacioLibre(char tab[][TAM_TAB], int ren, int col) {
         }
     }
 
-    for(r=ren,c=col; r>=0 && c>=0; r--,c++) { // Verificando si hay reina en diagonal sup derecha
+    for(r=ren,c=col; r>=0 && c<TAM_TAB; r--,c++) { // Verificando si hay reina en diagonal sup derecha
         if(tab[r][c] == '*') {
             return false;
         }
