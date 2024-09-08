@@ -55,7 +55,7 @@ def espacio_libre(tab, ren, col): # Verificar si hay espacio libre
         if(tab[r][c] == "*"):
             return False
     
-    for r,c in zip(range(ren,-1,-1), range(col,-1,1)): # Verificando si hay reina en diagonal sup derecha
+    for r,c in zip(range(ren,-1,-1), range(col,len(tab),1)): # Verificando si hay reina en diagonal sup derecha
         if(tab[r][c] == "*"):
             return False
     
