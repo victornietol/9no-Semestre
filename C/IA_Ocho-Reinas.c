@@ -1,5 +1,5 @@
 /*
-Programador: Nieto Licona Victor Manuel  Paterno Materno Nombre (s)
+Programador: Nieto Licona Victor Manuel
 Fecha Entrega: Septiembre 9, 2024
 Archivo: ocho_reinas.c
 Enlace: https://github.com/victornietol/9no-Semestre/blob/main/C/IA_Ocho-Reinas.c
