@@ -69,7 +69,20 @@ bool espacioLibre(char tab[][TAM_TAB], int ren, int col) {
 // Funcion para colocar reinas
 bool colocarReinas(char tab[][TAM_TAB], int ren) {
     if(ren >= TAM_TAB) { // En caso de colocar todas las reinas
-        return true;
+        // Verificar que esten todas las reinas colocadas
+        int reinas = 0; // Conteo de reinas
+        for(int r=0; r<TAM_TAB; r++) {
+            for(int c=0; c<TAM_TAB; c++) {
+                if(tab[r][c] == '*') {
+                    reinas++;
+                }
+            }
+        }
+        if(reinas == 8) {
+            return true; // Se colocaron todas las reinas
+        } else {
+            return false; // No se llego a una solucion
+        }
     }
 
     for(int col=0; col<TAM_TAB; col++) { // Intento de colocar una reina en una columna de la fila actual
