@@ -1,2 +1,2 @@
 # 9no-Semestre
-Repositorio para los codigos del 9no Semestre
+Repositorio. Codigos 9no Semestre
